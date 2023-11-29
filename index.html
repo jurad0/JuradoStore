@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo final 1º Trimestre Entorno Cliente</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/carrito.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+
+    <!-- <link rel="stylesheet" href="/style/custom.css"> -->
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">JuradoStore</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="productos">Productos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="electronica">Electronica</a></li>
+                            <li><a class="dropdown-item" href="#" id="joyeria">Joyeria</a></li>
+                            <li><a class="dropdown-item" href="#" id="ropahombre">Ropa de Hombre</a></li>
+                            <li><a class="dropdown-item" href="#" id="ropamujer">Ropa de Mujer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" id="perfilNav">Mi perfil</a></li>
+                    <li class="nav-item"><button class="btn btn-outline-success" id="logout"
+                            type="submit">Logout</button></li>
+                </ul>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito">
+                        <div id="carrito">
+
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <!-- Agregado el elemento para mostrar la suma total de precios -->
+                            <div id="precio-total"></div>
+
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="#" id="guardar-carrito" class="button u-full-width">Finalizar Compra</a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+
+    </div>
+    <div id="lista-carrito">
+        <div id="appDiv" class="container">
+            <h1>Bienvenid@s a JuradoStore</h1>
+            <p>
+
+
+                En JuradoStore, nos enorgullece ofrecerte una experiencia de compra única, donde encontrarás todo lo que
+                necesitas en un solo lugar. Desde artículos de moda hasta productos electrónicos de última generación,
+                nuestro amplio catálogo está diseñado para satisfacer tus necesidades y superar tus expectativas.
+
+                Explora nuestras secciones cuidadosamente seleccionadas para descubrir las últimas tendencias en moda,
+                tecnología innovadora, artículos para el hogar y mucho más. Nos esforzamos por ofrecer productos de alta
+                calidad que no solo sean funcionales, sino también elegantes y asequibles.
+
+                En JuradoStore, la satisfacción del cliente es nuestra prioridad. Nuestro equipo está dedicado a
+                brindarte un servicio excepcional, asegurándonos de que cada compra sea una experiencia sin
+                complicaciones. Desde la navegación fácil en nuestro sitio web hasta la entrega puntual de tus
+                productos, trabajamos constantemente para hacer que tu experiencia de compra sea cómoda y placentera.
+
+                Además, mantente actualizado con nuestras últimas ofertas y promociones exclusivas. En JuradoStore,
+                creemos que la calidad no tiene que romper el banco, y nos esforzamos por ofrecerte precios competitivos
+                y ofertas irresistibles.
+
+                Gracias por elegir JuradoStore como tu destino de compras. Esperamos que disfrutes explorando nuestra
+                tienda y encuentres exactamente lo que buscas. ¡Bienvenido a JuradoStore, donde tus necesidades
+                encuentran su hogar.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
