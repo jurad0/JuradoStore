@@ -404,6 +404,9 @@ function guardarCambios(product) {
       const modalImageElement = modalExistente.querySelector(".img-fluid");
       const modalPriceElement = modalExistente.querySelector(".precio");
 
+      if (modalTitleElement && productoActualizado) {
+        modalTitleElement.textContent = productoActualizado.title;
+      }
       if (modalTitleElement) modalTitleElement.textContent = productoActualizado.title;
       if (modalImageElement) modalImageElement.src = productoActualizado.image;
       if (modalPriceElement) modalPriceElement.textContent = `${productoActualizado.price}`;
