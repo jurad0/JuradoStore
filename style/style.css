@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+}
+
+#encabezado {
+    margin: 30px 0;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#lista-cursos .row {
+    margin-bottom: 20px;
+}
+
+.agregar-carrito {
+    margin: 10px 0;
+}
+
+li>img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+#appDiv {
+    align-items: stretch;
+}
+
+#appDiv div {
+    justify-content: space-between;
+
+}
+
+.card-img-top {
+    object-fit: contain;
+    /* Ajusta el tamaño de la imagen */
+    width: 100%;
+    /* Establece el ancho al 100% para ocupar todo el espacio disponible */
+    height: 200px;
+    /* Altura fija (ajusta según tus necesidades) */
+}
+
+/* Estilo para las tarjetas (cards) */
